@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <ScrollNav msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <TabsLike />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import ScrollNav from './components/ScrollNav.vue';
+import { Component, Vue } from "vue-property-decorator";
+import TabsLike from "./components/TabsLike.vue";
 
 @Component({
-  components: {
-    ScrollNav,
-  },
+  components: { TabsLike },
 })
 export default class App extends Vue {}
 </script>
